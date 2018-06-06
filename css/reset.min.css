@@ -1,0 +1,21 @@
+article,aside,audio,b,body,canvas,dd,details,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,img,label,li,mark,menu,nav,ol,p,section,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,u,ul,video{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;font-size:100%}
+ol,ul{list-style:none}
+a{margin:0;padding:0;font-size:100%;background:0 0;vertical-align:baseline;outline:0}
+table{border-collapse:collapse;border-spacing:0}
+button,select,textarea{margin:0;font-size:100%;outline:0}
+input[type=password],input[type=text],textarea{padding:0}
+input[type=checkbox]{vertical-align:bottom}
+input[type=radio]{vertical-align:text-bottom}
+sub{vertical-align:sub;font-size:smaller}
+sup{vertical-align:super;font-size:smaller}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+html{min-height:100%}
+body{text-align:left;font-size:1em;min-height:100%}
+a,a:visited{text-decoration:none}
+a:hover{text-decoration:none}
+a:active,a:focus{text-decoration:none}
+h1,h2,h3,h4,h5,h6{font-weight:400}
+img{max-width:100%}
+.clr{clear:both}
+.clearfix:after{clear:both;content:"";display:table}
