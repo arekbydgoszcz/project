@@ -134,6 +134,21 @@
 		</div>
 	</div>
 </div>
+<!-- Uwaga -->
+<div class="uwaga">
+<div id="sliderJssidebarright">
+	  <div class="sliderJssidebarinner" style="margin-left: 8px;"><div class="sliderJssidebarbuttonright">	
+			<div id="likeboxbluestandardright" style="width: 326px; padding: 7px;">
+				<div id="likebox-frame-lightr" style="width: 288px; overflow: hidden;">
+					<object type="text/html" style="width: 293px; height: 535px; margin: -1px -4px 0 -4px;" data="uwaga-small.html" ></object>
+				</div><!-- likebox-frame-lightr -->
+			</div><!--likeboxbluestandardright-->
+		</div><!--sliderJssidebarinner-->
+	</div><!--sliderJssidebarright-->
+	</div><!--uwaga-->
+
+
+
 <!-- Piwnica strony (footer) -->
 <footer>
 	<div class="container">
@@ -149,6 +164,7 @@
 
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
+		// ------ SCROLL ---------
 		$(".slowly").on("click", function (event) {
 	    //отменяем стандартную обработку нажатия по ссылке
 	    event.preventDefault();
@@ -158,8 +174,26 @@
 	    top = $(id).offset().top;
 	    //анимируем переход на расстояние - top за 2000 мс
 	    $('body,html').animate({scrollTop: top}, 2000);
-	    });
-	});
-</script>
+	   });
+		//-------------- okno boczne "UWAGA" ----------------------- 
+		$('#sliderJssidebarleft > div').hover(
+			function () {
+	      $('.sliderJssidebarbuttonleft',$(this)).stop().animate({'marginLeft':'-12px'},200);
+	    },
+	    function () {
+        $('.sliderJssidebarbuttonleft',$(this)).stop().animate({'marginLeft':'-305px'},200);
+      });		
+    $('#sliderJssidebarright > div').hover(
+      function () {
+        $('.sliderJssidebarbuttonright',$(this)).stop().animate({'marginLeft':'-290px'},200);
+      },
+      function () {
+        $('.sliderJssidebarbuttonright',$(this)).stop().animate({'marginLeft':'8px'},200);
+      }
+    );
+  });
+			
+</script>  
+
 </body>
 </html>
